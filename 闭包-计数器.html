@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>闭包</h1>
+    <script>
+        "use strict"
+        function a(){
+            var start=0;
+            function b(){
+        
+                 return start++;
+            }
+            return b;
+        }
+        var inc = a();
+        console.log(inc());
+        console.log(inc());
+        console.log(inc());
+      
+    </script>
+</body>
+</html>
